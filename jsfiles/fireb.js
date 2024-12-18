@@ -26,7 +26,7 @@ async function register(email, password) {
       uid: userCredential.user.uid,
       createdAt: new Date()
     });
-    alert("User registered successfully!");
+    alert("User registered successfully!Please Sign in to continue....");
   } catch (error) {
     console.error("Registration error:", error);
     alert(error.message);
