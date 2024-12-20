@@ -8,17 +8,16 @@
     <script type="module" src="./jsfiles/fireb.js"></script>
     <style>
         body {
+            background-image: url("https://go4mobility.com/wp-content/uploads/2020/11/post_linkedin_wholesale_go4_swonkie_blog.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
             margin: 0;
             padding: 0;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            /* background: linear-gradient(to right, #ff7e5f, #feb47b); Warm pastel gradient */
-            /* background: linear-gradient(to right, #43cea2, #185a9d); Cool blue-green gradient */
-
-
+            /* background: linear-gradient(to right, #6a11cb, #2575fc); */
             font-family: Arial, sans-serif;
         }
 
@@ -125,6 +124,15 @@
             z-index: 10;
             animation: fadeOut 2s ease-out 3s forwards;
         }
+        #guestEntryBtn{
+        background-color: #007bff;
+        color: #ffffff;
+        border-style: none;
+        text-decoration: none;
+      font-size: medium;
+        padding: 5px;
+        width: 100px;
+        }
 
         @keyframes fadeOut {
             to {
@@ -154,7 +162,8 @@
             <button type="submit" id="btn1">Sign Up</button>
             <div class="links">
                 <p>Already Have an Account?</p>
-                <button id="signInButton">Sign In</button>
+                <button id="signInButton" type="button">Sign In</button>
+                <button id="guestEntryBtn" type="button">Guest Entry</button>
             </div>
         </form>
 
@@ -166,7 +175,7 @@
             <button type="submit" id="btn2">Sign In</button>
             <div class="links">
                 <p>Don't have an account yet?</p>
-                <button id="signUpButton">Sign Up</button>
+                <button id="signUpButton" type="button">Sign Up</button>
             </div>
         </form>
     </div>
@@ -176,6 +185,7 @@
         const signInForm = document.getElementById('signInForm');
         const signInButton = document.getElementById('signInButton');
         const signUpButton = document.getElementById('signUpButton');
+        const guestEntryBtn= document.getElementById('guestEntryBtn');
 
         signInButton.addEventListener('click', () => {
             signUpForm.classList.remove('active');
@@ -185,6 +195,11 @@
         signUpButton.addEventListener('click', () => {
             signInForm.classList.remove('active');
             signUpForm.classList.add('active');
+        });
+
+        guestEntryBtn.addEventListener('click', () => {
+            alert('Guest Entry: You can now access as a guest.');
+            window.open("main.html")
         });
     </script>
 </body>
