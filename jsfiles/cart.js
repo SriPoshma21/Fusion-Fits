@@ -1,4 +1,8 @@
 // Fetch cart data from localStorage
+let chkbtn=document.getElementById("chk-btn").addEventListener("click",()=>{
+window.location.href="checkoutpage.html"
+})
+
 let cartData = JSON.parse(localStorage.getItem("shoppingdata")) || [];
 
 // Function to render cart items
