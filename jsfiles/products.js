@@ -4,13 +4,13 @@ productsData = {
         "id": 1,"name": "Women's partywear frock","category": "Women's Clothing","price": 1000,"image": "https://littleboxindia.com/cdn/shop/files/f1d4802c9c39391020211dc1fb328304_720x.jpg?v=1719493846","description": "Comfortable and lightweight partywear frock with elegant look."
       },
       {
-        "id": 2,"name": "Women's Formal Dress","category": "Women's Clothing","price": 1500,"image": "https://littleboxindia.com/cdn/shop/files/2f402807687385395585d26c71b7c240_720x.jpg?v=1719499869","description": "Stylish formal dress for special occasions."
+        "id": 2,"name": "Women's Formal Dress","category": "Women's Clothing","price": 1500,"image": "https://littleboxindia.com/cdn/shop/files/DR1680_1_720x.webp?v=1741076856","description": "Stylish formal dress for special occasions."
       },
       {
         "id": 3,"name": "Women's trendy long frock","category": "Women's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/files/782_2_720x.jpg?v=1728902821","description": "Classic frock for a casual look."
       },
       {
-        "id": 4,"name": "Women's trendy top","category": "Women's Clothing","price": 800,"image": "https://littleboxindia.com/cdn/shop/products/f78b9dd002a3146c9517b84419735158_720x.jpg?v=1697205363","description": "Combo of Women's baggy jeans with side pockets "
+        "id": 4,"name": "Women's trendy top","category": "Women's Clothing","price": 800,"image": "https://littleboxindia.com/cdn/shop/files/Black_And_White_Striped_Corset_Fitted_Shirt_720x.jpg?v=1741077404","description": "Combo of Women's baggy jeans with side pockets "
       },
       {
         "id": 5,"name": "Women's Skirt","category": "Women's Clothing","price": 1100,"image": "https://littleboxindia.com/cdn/shop/files/367c477d4d62e1cb56412edeb6fe887b_720x.jpg?v=1718453316","description": "Classic top for a relaxed yet stylish look."
@@ -19,7 +19,7 @@ productsData = {
         "id": 6,"name": "Women's stylish short frock","category": "Women's Clothing","price": 1500,"image": "https://littleboxindia.com/cdn/shop/files/c09bba30a793f6d782342b222a0ded0d_720x.jpg?v=1725545953", "description": "Casual frock for vacations."
       },
       {
-        "id": 7,"name": "Women's stylish short top","category": "Women's Clothing","price": 2000,"image": "https://littleboxindia.com/cdn/shop/products/c7088e1a4553af0347d7753cd18ba82f_1024x1024.jpg?v=1684142845","description": "Stylish short top for a bold look."
+        "id": 7,"name": "Women's stylish short top","category": "Women's Clothing","price": 2000,"image": "https://littleboxindia.com/cdn/shop/files/Lantern_Sleeve_Button_Front_Slim_Fit_Red_Shirt_720x.webp?v=1742292364","description": "Stylish short top for a bold look."
       },
       {
         "id": 8,"name": "Women's Blazer","category": "Women's Clothing","price": 1800,"image": "https://littleboxindia.com/cdn/shop/files/401cf835a8036c90b69d658c1e09378e_720x.jpg?v=1718892828","description": "A formal blazer for professional wear."
@@ -40,25 +40,25 @@ productsData = {
         "id": 13,"name": "Women's Button-Up Shirt","category": "Women's Clothing","price": 1300,"image": "https://littleboxindia.com/cdn/shop/files/245ec1563a589797dc3ad510435f7d20_360x.jpg?v=1731586953","description": "Classic button-up shirt for versatile wear"
       },
       {
-        "id": 14,"name": "Women's Cardigan","category": "Women's Clothing","price": 1400,"image": "https://littleboxindia.com/cdn/shop/files/10_1_1_720x.jpg?v=1730888799","description": "Women's trendy floral top"
+        "id": 14,"name": "Women's Cardigan","category": "Women's Clothing","price": 1400,"image": "https://littleboxindia.com/cdn/shop/files/Floral_Print_Tie_Waist_Spring_Summer_Cami_Dress_720x.jpg?v=1741076474","description": "Women's trendy floral top"
       },
       {
         "id": 15,"name": "Women's Baggy jean ","category": "Women's Clothing","price": 600,"image": "https://littleboxindia.com/cdn/shop/files/baf2782e8c2df5d2e8281f21e6a4769e_720x.jpg?v=1722083471","description": "Lightweight Baggy jean with side pockets."
       },
       {
-        "id": 16,"name": "Women's combo casual pants","category": "Women's Clothing","price": 700,"image": "https://littleboxindia.com/cdn/shop/products/45fefa30626506e902f56eeebd45699a.jpg?v=1681987772","description": "Casual pants for everyday wear."
+        "id": 16,"name": "Women's combo casual pants","category": "Women's Clothing","price": 700,"image": "https://littleboxindia.com/cdn/shop/products/717adcf9f39d0281c12bb10f55dd7382_720x.jpg?v=1740750170","description": "Casual pants for everyday wear."
       },
       {
         "id": 17,"name": "Women's Skirt","category": "Women's Clothing","price": 1600,"image": "https://littleboxindia.com/cdn/shop/files/632c06f4c19162b3df38f9f3b375f9a2_720x.jpg?v=1725720395", "description": "Warm skirt for chilly days."
       },
       {
-        "id": 18,"name": "Women's Western top","category": "Women's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/files/d8586406d48bd9e769aba35ec6108757_720x.jpg?v=1727695187","description": "Casual crew neck top for a relaxed fit."
+        "id": 18,"name": "Women's Western top","category": "Women's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/files/2e695798c5ec3c5d74e80e8580af06a3_720x.jpg?v=1741087746","description": "Casual crew neck top for a relaxed fit."
       },
       {
         "id": 19,"name": "Women's Solid dress","category": "Women's Clothing","price": 1700,"image": "https://littleboxindia.com/cdn/shop/files/2e621bc315a85f168487950508e231a4_720x.jpg?v=1731001132","description": "Full dress for an athletic look."
       },
       {
-        "id": 20,"name": "Women's Frock","category": "Women's Clothing","price": 2000,"image": "https://littleboxindia.com/cdn/shop/files/571_1_720x.jpg?v=1719396282","description": "Elegant dress for formal events."
+        "id": 20,"name": "Women's Frock","category": "Women's Clothing","price": 2000,"image": "https://littleboxindia.com/cdn/shop/files/Velvet_Boat_Neck_Bowknot_Backless_Long_Midi_Dress_In_Cherry_Red_720x.jpg?v=1741078782","description": "Elegant dress for formal events."
       }
       
     ],
@@ -126,7 +126,7 @@ productsData = {
     ],
     "kids": [
       {
-        "id": 1,"name": "Girls Party Wear Frock","category": "Kids' Clothing","price": 500,"image": "https://cdn.shopify.com/s/files/1/0646/0211/2255/files/ab5d10b4-5bfa-4395-9b6a-051d755920f8O1CN01zm87Us2CrsWRttWbU__21_212216143268528-0-cib_233a841b-8fc5-4bc3-a87f-04b86d2f79d0.jpg?v=1725383490","description": "Bright and Royal frock for kids."
+        "id": 1,"name": "Girls Party Wear Frock","category": "Kids' Clothing","price": 500,"image": "https://cdn.shopify.com/s/files/1/0646/0211/2255/files/5ad6af64-6916-4060-84d5-75203539d4e2.jpg?v=1741609969&width=2160","description": "Bright and Royal frock for kids."
       },
       {
         "id": 2,"name": "Boys Shirt and Bottom wear","category": "Kids' Clothing","price": 600,"image": "https://includ.com/cdn/shop/files/1_1024x1024_d579eeb0-de4a-4c22-bde8-a1c4b2863936_1024x1024.jpg?v=1722014233","description": "Comfortable shirt and jogger for warm weather."
@@ -179,7 +179,7 @@ productsData = {
         "id": 18,"name": "Kids' Trendy Dress","category": "Kids' Clothing","price": 850,"image": "https://includ.com/cdn/shop/files/1345951d-ae15-42fd-bdce-3c47394d5c5dO1CN01hXATnp22PoAUJFFnN__21_212214427707113-0-cib_1024x1024.jpg?v=1716570668","description": "Stylish dress for girls."
       },
       {
-        "id": 19,"name": "Kids' Romper","category": "Kids' Clothing","price": 700,"image": "https://includ.com/cdn/shop/files/0823a616-c5dd-4cdc-a979-f39c458e09b6O1CN01aC33AQ1tYCsqiunXK__21_213442015913-0-cib_1024x1024.jpg?v=1716225108","description": "Cute romper for toddlers."
+        "id": 19,"name": "Kids' Romper","category": "Kids' Clothing","price": 700,"image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQm4tYXBIb0VBK0wePeByKDGJVh6iofZ45mGUPEWJYbMwrbcjHKbfewDIAyOSU4eNJanSy1jE57ylFv8DKRYWu3anTA888lvMngGV_Dx9TDwBbZJwn3zhwTLw","description": "Cute romper for toddlers."
       },
       {
         "id": 20,"name": "Kids' Frock","category": "Kids' Clothing","price": 1500,"image": "https://spunkies.com/cdn/shop/files/SG-DR-1039_1_875f7351-00a0-471e-8efe-f498a46f0589_1800x1800.jpg?v=1722240103","description": "Warm frock for cold days."
@@ -227,7 +227,7 @@ productsData = {
           "id": 13,"name": "Newborn Sleeper","category": "Newborn","price": 1300,"image": "https://duckduckbaby.in/cdn/shop/files/DDB7166_1.jpg?v=1718563505&width=600", "description": "A one-piece sleeper for easy dressing and undressing."
         },
         {
-          "id": 14,"name": "Newborn Bodysuit Set","category": "Newborn", "price": 1400,"image": "https://tse4.mm.bing.net/th?id=OIP.q-mqMq_t3Y4ldXGeGln5_gAAAA&pid=Api","description": "A set of bodysuits offering variety and comfort for your newborn."
+          "id": 14,"name": "Newborn Bodysuit Set","category": "Newborn", "price": 1400,"image": "https://images.meesho.com/images/products/480816964/hzltp_1200.jpg","description": "A set of bodysuits offering variety and comfort for your newborn."
         },
         {
           "id": 15, "name": "Newborn Footie Pajamas","category": "Newborn","price": 1500,"image": "https://tse1.mm.bing.net/th?id=OIP.-Ymu2OxS6wgwK_bZUATQ6AHaJ4&pid=Api", "description": "Footed pajamas to keep your newborn's feet warm and cozy."
