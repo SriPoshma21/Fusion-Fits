@@ -6,48 +6,36 @@
 }
   /* SECTION-3 */
   /* Mobile Devices */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .el3 {
     flex-direction: column;
     align-items: center;
-  }
-
-  /* Content Styling */
-  .sec3-content {
-    max-width: 100%;
     text-align: center;
+    padding: 20px;
   }
 
-  .sec3-content h1 {
-    font-size: 1.8em;
+  .sec3-content, 
+  .sec3-img {
+    max-width: 100%;
   }
 
-  .sec3-content p {
-    font-size: 1.2em;
-  }
-
-  .sec3-content .btn1 {
-    padding: 10px 20px;
-    font-size: 1em;
-  }
-
-  /* Image Grid Styling */
   .sec3-img {
     grid-template-columns: 1fr;
-    grid-template-rows: auto; 
-    gap: 10px;
-    max-width: 100%;
+    place-items: center; /* Center each image */
+    margin-top: 2em;
   }
 
   .sec3-img img {
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
   }
 
-  .sec3-img .img1,
-  .sec3-img .img2,
-  .sec3-img .img3,
-  .sec3-img .img4 {
-    height: auto; 
+  .sec3-content h1 {
+    font-size: 1.5em;
+  }
+
+  .sec3-content p {
+    font-size: 0.95em;
   }
 }
 
@@ -104,50 +92,50 @@
 /* SECTION-4 */
   /* Mobile Devices */
   @media (max-width: 767px) {
-    .el4 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    /* Content Styling */
-    .sec4-content {
-      max-width: 100%;
-      text-align: center;
-    }
-  
-    .sec4-content h1 {
-      font-size: 1.8em;
-    }
-  
-    .sec4-content p {
-      font-size: 1.2em;
-    }
-  
-    .sec4-content .btn1 {
-      padding: 10px 20px;
-      font-size: 1em;
-    }
-  
-    /* Image Grid Styling */
-    .sec4-img {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto; 
-      gap: 10px;
-      max-width: 100%;
-    }
-  
-    .sec4-img img {
-      height: 200px;
-    }
-  
-    .sec4-img .img5,
-    .sec4-img .img6,
-    .sec4-img .img7,
-    .sec4-img .img8 {
-      height: auto;
-    }
+  .el4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
   }
-  
+
+  /* Content Styling */
+  .sec4-content {
+    max-width: 100%;
+  }
+
+  .sec4-content h1 {
+    font-size: 1.8em;
+  }
+
+  .sec4-content p {
+    font-size: 1em;
+  }
+
+  .sec4-content .btn1 {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  /* Image Grid Styling */
+  .sec4-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center; /* Center images */
+    gap: 15px;
+    max-width: 100%;
+    margin-top: 2em;
+  }
+
+  .sec4-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
   /* Tablets (768px - 1024px) */
   @media (max-width: 1024px) and (min-width: 768px) {
     .el4 {

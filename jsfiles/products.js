@@ -1,19 +1,19 @@
 productsData = {
     "women": [
       {
-        "id": 1,"name": "Women's partywear frock","category": "Women's Clothing","price": 1000,"image": "https://littleboxindia.com/cdn/shop/files/f1d4802c9c39391020211dc1fb328304_720x.jpg?v=1719493846","description": "Comfortable and lightweight partywear frock with elegant look."
+        "id": 1,"name": "Women's partywear frock","category": "Women's Clothing","price": 1000,"image": "https://littleboxindia.com/cdn/shop/files/f1d4802c9c39391020211dc1fb328304_720x.jpg?v=1719493846","description": " partywear frock with elegant look."
       },
       {
-        "id": 2,"name": "Women's Formal Dress","category": "Women's Clothing","price": 1500,"image": "https://littleboxindia.com/cdn/shop/files/DR1680_1_720x.webp?v=1741076856","description": "Stylish formal dress for special occasions."
+        "id": 2,"name": "Women's Formal Dress","category": "Women's Clothing","price": 1500,"image": "https://littleboxindia.com/cdn/shop/files/DR1680_1_720x.webp?v=1741076856","description": " formal dress for special occasions."
       },
       {
-        "id": 3,"name": "Women's trendy long frock","category": "Women's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/files/782_2_720x.jpg?v=1728902821","description": "Classic frock for a casual look."
+        "id": 3,"name": "Women's trendy long frock","category": "Women's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/files/ed0d0d7c6c729604c042bcc7781c65d8_720x.jpg?v=1747033594","description": "Classic frock for a casual look."
       },
       {
-        "id": 4,"name": "Women's trendy top","category": "Women's Clothing","price": 800,"image": "https://littleboxindia.com/cdn/shop/files/Black_And_White_Striped_Corset_Fitted_Shirt_720x.jpg?v=1741077404","description": "Combo of Women's baggy jeans with side pockets "
+        "id": 4,"name": "Women's trendy top","category": "Women's Clothing","price": 800,"image": "https://littleboxindia.com/cdn/shop/files/Black_And_White_Striped_Corset_Fitted_Shirt_720x.jpg?v=1741077404","description": "western top classy look "
       },
       {
-        "id": 5,"name": "Women's Skirt","category": "Women's Clothing","price": 1100,"image": "https://littleboxindia.com/cdn/shop/files/367c477d4d62e1cb56412edeb6fe887b_720x.jpg?v=1718453316","description": "Classic top for a relaxed yet stylish look."
+        "id": 5,"name": "Women's Skirt","category": "Women's Clothing","price": 1100,"image": "https://littleboxindia.com/cdn/shop/files/Summer_High_Waist_A-Line_Pleated_Skirt_In_Light_Brown_Without_Belt_720x.webp?v=1742451119","description": "Classic top for a relaxed."
       },
       {
         "id": 6,"name": "Women's stylish short frock","category": "Women's Clothing","price": 1500,"image": "https://littleboxindia.com/cdn/shop/files/c09bba30a793f6d782342b222a0ded0d_720x.jpg?v=1725545953", "description": "Casual frock for vacations."
@@ -22,40 +22,40 @@ productsData = {
         "id": 7,"name": "Women's stylish short top","category": "Women's Clothing","price": 2000,"image": "https://littleboxindia.com/cdn/shop/files/Lantern_Sleeve_Button_Front_Slim_Fit_Red_Shirt_720x.webp?v=1742292364","description": "Stylish short top for a bold look."
       },
       {
-        "id": 8,"name": "Women's Blazer","category": "Women's Clothing","price": 1800,"image": "https://littleboxindia.com/cdn/shop/files/401cf835a8036c90b69d658c1e09378e_720x.jpg?v=1718892828","description": "A formal blazer for professional wear."
+        "id": 8,"name": "Women's Blazer","category": "Women's Clothing","price": 1800,"image": "https://littleboxindia.com/cdn/shop/files/401cf835a8036c90b69d658c1e09378e_720x.jpg?v=1718892828","description": "A formal blazer."
       },
       {
-        "id": 9,"name": "Women's tank top and stylish skirt","category": "Women's Clothing","price": 1000,"image": "https://littleboxindia.com/cdn/shop/products/6477df2e67616cf3d5f0561c821f5724_ba8e01fd-e5f2-4f5d-86e3-30875b0acf57_720x.jpg?v=1691239768","description": "Casual party wear outfit."
+        "id": 9,"name": "Women's tank top&stylish skirt","category": "Women's Clothing","price": 1000,"image": "https://littleboxindia.com/cdn/shop/files/Sleeveless_Crop_Tank_Top_Ruched_Maxi_Skirt_In_Off_White_720x.jpg?v=1742275520","description": "Casual party wear outfit."
       },
       {
-        "id": 10,"name": "Women's floral print top","category": "Women's Clothing","price": 700,"image": "https://littleboxindia.com/cdn/shop/files/e9aeac2202a3daf768a75e7851345ddd_720x.jpg?v=1723922873","description": "Comfortable top for summer."
+        "id": 10,"name": "Women's floral print top","category": "Women's Clothing","price": 700,"image": "https://littleboxindia.com/cdn/shop/products/Corset_Style_Puff_Sleeve_Floral_Top_720x.jpg?v=1740749930","description": "Comfortable top for summer."
       },
       {
-        "id": 11, "name": "Women's Parka skirt", "category": "Women's Clothing", "price": 1800, "image": "https://littleboxindia.com/cdn/shop/files/16b6a9c44b57c0196fb336af3bac3be5_720x.jpg?v=1730886192", "description": "Warm parka skirt for winter weather."
+        "id": 11, "name": "Women's Parka skirt", "category": "Women's Clothing", "price": 1800, "image": "https://littleboxindia.com/cdn/shop/files/Gothic_Ruffle_Trim_High_Low_Black_Skirt_Without_Belt_720x.webp?v=1742546392", "description": "Warm parka skirt for winter weather."
       },
       {
-        "id": 12,"name": "Women's Chinos","category": "Women's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/products/5043e29ed312f02939e2101fc2dc64f2_360x.jpg?v=1698319263","description": "Comfortable chinos for a smart-casual look."
+        "id": 12,"name": "Women's Chinos","category": "Women's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/products/5043e29ed312f02939e2101fc2dc64f2_360x.jpg?v=1698319263","description": "chinos for a smart-casual look."
       },
       {
-        "id": 13,"name": "Women's Button-Up Shirt","category": "Women's Clothing","price": 1300,"image": "https://littleboxindia.com/cdn/shop/files/245ec1563a589797dc3ad510435f7d20_360x.jpg?v=1731586953","description": "Classic button-up shirt for versatile wear"
+        "id": 13,"name": "Women's Button-Up Shirt","category": "Women's Clothing","price": 1300,"image": "https://littleboxindia.com/cdn/shop/files/245ec1563a589797dc3ad510435f7d20_360x.jpg?v=1731586953","description": "Classic button-up shirt"
       },
       {
         "id": 14,"name": "Women's Cardigan","category": "Women's Clothing","price": 1400,"image": "https://littleboxindia.com/cdn/shop/files/Floral_Print_Tie_Waist_Spring_Summer_Cami_Dress_720x.jpg?v=1741076474","description": "Women's trendy floral top"
       },
       {
-        "id": 15,"name": "Women's Baggy jean ","category": "Women's Clothing","price": 600,"image": "https://littleboxindia.com/cdn/shop/files/baf2782e8c2df5d2e8281f21e6a4769e_720x.jpg?v=1722083471","description": "Lightweight Baggy jean with side pockets."
+        "id": 15,"name": "Women's Baggy jean ","category": "Women's Clothing","price": 600,"image": "https://littleboxindia.com/cdn/shop/files/82a1eb299edcf8a7c2adbc9b25054f35_720x.jpg?v=1743664509","description": "Lightweight Baggy jean."
       },
       {
-        "id": 16,"name": "Women's combo casual pants","category": "Women's Clothing","price": 700,"image": "https://littleboxindia.com/cdn/shop/products/717adcf9f39d0281c12bb10f55dd7382_720x.jpg?v=1740750170","description": "Casual pants for everyday wear."
+        "id": 16,"name": "Women's combo casual pants","category": "Women's Clothing","price": 700,"image": "https://littleboxindia.com/cdn/shop/products/Combo_Trending_Cargo_In_Brown_In_Black_With_Pockets_720x.jpg?v=1742196292","description": "Casual pants for everyday wear."
       },
       {
         "id": 17,"name": "Women's Skirt","category": "Women's Clothing","price": 1600,"image": "https://littleboxindia.com/cdn/shop/files/632c06f4c19162b3df38f9f3b375f9a2_720x.jpg?v=1725720395", "description": "Warm skirt for chilly days."
       },
       {
-        "id": 18,"name": "Women's Western top","category": "Women's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/files/2e695798c5ec3c5d74e80e8580af06a3_720x.jpg?v=1741087746","description": "Casual crew neck top for a relaxed fit."
+        "id": 18,"name": "Women's Western top","category": "Women's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/files/2e695798c5ec3c5d74e80e8580af06a3_720x.jpg?v=1741087746","description": "crew neck top for a relaxed fit."
       },
       {
-        "id": 19,"name": "Women's Solid dress","category": "Women's Clothing","price": 1700,"image": "https://littleboxindia.com/cdn/shop/files/2e621bc315a85f168487950508e231a4_720x.jpg?v=1731001132","description": "Full dress for an athletic look."
+        "id": 19,"name": "Women's Solid dress","category": "Women's Clothing","price": 1700,"image": "https://littleboxindia.com/cdn/shop/files/2e621bc315a85f168487950508e231a4_720x.jpg?v=1731001132","description": "Full dress for relaxed fit."
       },
       {
         "id": 20,"name": "Women's Frock","category": "Women's Clothing","price": 2000,"image": "https://littleboxindia.com/cdn/shop/files/Velvet_Boat_Neck_Bowknot_Backless_Long_Midi_Dress_In_Cherry_Red_720x.jpg?v=1741078782","description": "Elegant dress for formal events."
@@ -64,13 +64,13 @@ productsData = {
     ],
     "men": [
       {
-        "id": 1,"name": "Men's Casual Shirt","category": "Men's Clothing","price": 1000,"image": "https://littleboxindia.com/cdn/shop/files/89de8d61ab61d08cec85b84b30c710c3_300x.jpg?v=1722071415", "description": "Comfortable and lightweight casual shirt."
+        "id": 1,"name": "Men's Casual Shirt","category": "Men's Clothing","price": 1000,"image": "https://littleboxindia.com/cdn/shop/files/89de8d61ab61d08cec85b84b30c710c3_300x.jpg?v=1722071415", "description": " lightweight casual shirt."
       },
       {
         "id": 2,"name": "Men's Formal Shirt","category": "Men's Clothing","price": 1500,"image": "https://littleboxindia.com/cdn/shop/files/50_1_720x.jpg?v=1720426678","description": "Stylish formal shirt for office wear."
       },
       {
-        "id": 3,"name": "Men's Denim Jeans","category": "Men's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/files/a0bd01739a223266174428961cf0c4ed_720x.jpg?v=1714668076","description": "Classic denim jeans for a casual look."
+        "id": 3,"name": "Men's Denim Jeans","category": "Men's Clothing","price": 1200,"image": "https://littleboxindia.com/cdn/shop/files/a0bd01739a223266174428961cf0c4ed_720x.jpg?v=1714668076","description": "Denim jeans for a casual look."
       },
       {
         "id": 4, "name": "Men's T-Shirt","category": "Men's Clothing","price": 800,"image": "https://littleboxindia.com/cdn/shop/files/3ca07232d0429857d68e9ede0ed7f318_720x.jpg?v=1714666648","description": "Soft cotton T-shirt for everyday wear."
@@ -84,7 +84,7 @@ productsData = {
         "id": 7,"name": "Men's Leather Jacket","category": "Men's Clothing","price": 2000,"image": "https://littleboxindia.com/cdn/shop/files/42_1_720x.jpg?v=1713620717","description": "Stylish leather jacket for a bold look."
       },
       {
-        "id": 8,"name": "Men's Blazer","category": "Men's Clothing","price": 1800,"image": "https://littleboxindia.com/cdn/shop/files/ca05ec7f0b32b979bf470e19ee894a22_720x.jpg?v=1716221770","description": "A formal blazer for professional wear."
+        "id": 8,"name": "Men's Blazer","category": "Men's Clothing","price": 1800,"image": "https://littleboxindia.com/cdn/shop/files/ca05ec7f0b32b979bf470e19ee894a22_720x.jpg?v=1716221770","description": "formal blazer for professional wear."
       },
       {
         "id": 9,"name": "Men's Sweatpants","category": "Men's Clothing","price": 1000,"image": "https://littleboxindia.com/cdn/shop/files/a2647742f1e2ac9b531bfe4361473f89_720x.jpg?v=1715084256","description": "Relaxed fit sweatpants for lounging."
@@ -93,22 +93,22 @@ productsData = {
         "id": 10,"name": "Men's Shorts","category": "Men's Clothing","price": 700,"image": "https://littleboxindia.com/cdn/shop/files/43_1_720x.jpg?v=1713763109","description": "Comfortable shorts for summer."
       },
       {
-        "id": 11,"name": "Men's Parka Jacket","category": "Men's Clothing","price": 1800,"image": "https://littleboxindia.com/cdn/shop/products/22ba91abf1390001f32ee47ed68fb84e_720x.jpg?v=1696857279","description": "Warm parka jacket for winter weather."
+        "id": 11,"name": "Men's Parka Jacket","category": "Men's Clothing","price": 1800,"image": "https://littleboxindia.com/cdn/shop/products/Gorpcore_Color_Block_Zip_Up_Outerwear_Bomber_In_Dark_Green_720x.jpg?v=1743161973","description": "Parka jacket for winter weather."
       },
       {
-        "id": 12,"name": "Men's Chinos","category": "Men's Clothing","price": 200,"image": "https://littleboxindia.com/cdn/shop/files/28d_d3808282-d2fc-45e4-88eb-23cb4910b970_720x.jpg?v=1691412332","description": "Comfortable chinos for a smart-casual look."
+        "id": 12,"name": "Men's Chinos","category": "Men's Clothing","price": 200,"image": "https://littleboxindia.com/cdn/shop/files/28d_d3808282-d2fc-45e4-88eb-23cb4910b970_720x.jpg?v=1691412332","description": "Chinos for a smart-casual look."
       },
       {
         "id": 13,"name": "Men's Cardigan","category": "Men's Clothing","price": 1300,"image": "https://littleboxindia.com/cdn/shop/products/0bff4d5a2ed712e90d778d315a9c0df7_720x.jpg?v=1709900085","description": "Soft cardigan for layering."
       },
       {
-        "id": 14,"name": "Men's Button-Up Shirt","category": "Men's Clothing","price": 1400,"image": "https://littleboxindia.com/cdn/shop/products/bbc7b858e5172c12d4367d8480f11269_720x.jpg?v=1691403792","description": "Classic button-up shirt for versatile wear."
+        "id": 14,"name": "Men's Button-Up Shirt","category": "Men's Clothing","price": 1400,"image": "https://littleboxindia.com/cdn/shop/products/bbc7b858e5172c12d4367d8480f11269_720x.jpg?v=1691403792","description": "Button-up shirt for versatile wear."
       },
       {
-        "id": 15,"name": "Men's Tank Top","category": "Men's Clothing","price": 600,"image": "https://littleboxindia.com/cdn/shop/files/177_1_720x.jpg?v=1713619819","description": "Lightweight tank top for summer days."
+        "id": 15,"name": "Men's Tank Top","category": "Men's Clothing","price": 600,"image": "https://littleboxindia.com/cdn/shop/files/177_1_720x.jpg?v=1713619819","description": "Lightweight for summer days."
       },
       {
-        "id": 16,"name": "Men's V-Neck T-Shirt","category": "Men's Clothing","price": 700,"image": "https://littleboxindia.com/cdn/shop/files/3f9c84b6a2842b595f2e8edb0ac0143e_720x.jpg?v=1711480476","description": "Casual v-neck T-shirt for everyday wear."
+        "id": 16,"name": "Men's V-Neck T-Shirt","category": "Men's Clothing","price": 700,"image": "https://littleboxindia.com/cdn/shop/files/3f9c84b6a2842b595f2e8edb0ac0143e_720x.jpg?v=1711480476","description": "Casual T-shirt for everyday wear."
       },
       {
         "id": 17,"name": "Men's Sweater","category": "Men's Clothing","price": 1600,"image": "https://littleboxindia.com/cdn/shop/files/37_3_720x.jpg?v=1711203231","description": "Warm sweater for chilly days."
@@ -129,10 +129,10 @@ productsData = {
         "id": 1,"name": "Girls Party Wear Frock","category": "Kids' Clothing","price": 500,"image": "https://cdn.shopify.com/s/files/1/0646/0211/2255/files/5ad6af64-6916-4060-84d5-75203539d4e2.jpg?v=1741609969&width=2160","description": "Bright and Royal frock for kids."
       },
       {
-        "id": 2,"name": "Boys Shirt and Bottom wear","category": "Kids' Clothing","price": 600,"image": "https://includ.com/cdn/shop/files/1_1024x1024_d579eeb0-de4a-4c22-bde8-a1c4b2863936_1024x1024.jpg?v=1722014233","description": "Comfortable shirt and jogger for warm weather."
+        "id": 2,"name": "Boys Shirt and Bottom wear","category": "Kids' Clothing","price": 600,"image": "https://includ.com/cdn/shop/files/1_1024x1024_d579eeb0-de4a-4c22-bde8-a1c4b2863936_1024x1024.jpg?v=1722014233","description": "shirt and jogger for warm weather."
       },
       {
-        "id": 3, "name": "Girls   Princess Party Wear Frock", "category": "Kids' Clothing", "price": 700, "image": "https://includ.com/cdn/shop/files/bb172f4c-8fd2-49d7-90ee-810a86e082d5O1CN01s4Js3M2CrsXKxR5ZE__21_212216143268528-0-cib_e8d0a1be-4f4d-400d-b3d7-b258f4b3810b_1024x1024.jpg?v=1725383486", "description": "Suitable for Occasional wear."
+        "id": 3, "name": "Girls princess party wear ", "category": "Kids' Clothing", "price": 700, "image": "https://includ.com/cdn/shop/files/bb172f4c-8fd2-49d7-90ee-810a86e082d5O1CN01s4Js3M2CrsXKxR5ZE__21_212216143268528-0-cib_e8d0a1be-4f4d-400d-b3d7-b258f4b3810b_1024x1024.jpg?v=1725383486", "description": "Suitable for Occasional wear."
       },
       {
         "id": 4,"name": "Trendy wear for kids","category": "Kids' Clothing","price": 800,"image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8e%2F22%2F8e22dddfa6d3b7699cf63fa2cfd654b329b306dd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]","description": "Soft hoodie for kids' comfort."
@@ -320,7 +320,7 @@ function loadProducts() {
       <img src="${product.image}" alt="${product.name}">
       <h3>${product.name}</h3>
       <p>${product.description}</p>
-      <p class="price"><strong>price:</strong>₹${product.price}</p>
+      <p class="price"><strong></strong>₹${product.price}</p>
       <button class="add-to-cart-btn">Add to Cart</button>
       <button class="add-to-wishlist-btn">Wishlist</button>
     `;
