@@ -1,206 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script type="module" src="./jsfiles/fireb.js"></script>
-    <style>
-        body {
-            background-image: url("https://go4mobility.com/wp-content/uploads/2020/11/post_linkedin_wholesale_go4_swonkie_blog.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* background: linear-gradient(to right, #6a11cb, #2575fc); */
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./media/media.css">
+  <style>
+    .navbar {
+  background-color: #fff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
 
-        .center-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: relative;
-        }
+.navbar-brand {
+  font-weight: 900;
+  font-size: x-large;
+  color: #ff5722 !important;
+}
 
-        form {
-            width: 100%;
-            max-width: 400px;
-            padding: 2rem;
-            border-radius: 8px;
-            background-color: #ffffff;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            transform: scale(0.8);
-            transition: all 0.3s ease-in-out;
-        }
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #333 !important;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
 
-        form.active {
-            display: flex;
-            flex-direction: column;
-            opacity: 1;
-            transform: scale(1);
-        }
+.navbar-nav .nav-link:hover {
+  color: #ff5722 !important;
+}
 
-        .form-title {
-            text-align: center;
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-            color: #495057;
-        }
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+}
 
-        input[type="email"], input[type="password"] {
-            width: 100%;
-            padding: 0.75rem;
-            margin-bottom: 1rem;
-            border-radius: 4px;
-            border: 1px solid #ced4da;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
+.nav-icons {
+  align-items: center;
+  gap: 15px;
+}
 
-        input[type="email"]:focus, input[type="password"]:focus {
-            border-color: #80bdff;
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-        }
+.filter-options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1000;
+}
 
-        button {
-            width: 100%;
-            padding: 0.75rem;
-            font-size: 1rem;
-            border: none;
-            border-radius: 4px;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
+.filter-options.hidden {
+  display: none;
+}
+.navbar-profile {
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.navbar-profile img {
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+.navbar-profile img:hover {
+  transform: scale(1.1);
+}
 
-        button:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
+/* === Responsive Styles === */
 
-        .links {
-            text-align: center;
-            margin-top: 1rem;
-        }
+/* For tablets and small desktops */
+@media (max-width: 991.98px) {
+  .navbar-nav-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+  }
 
-        .links button {
-            background: none;
-            border: none;
-            color: #007bff;
-            font-size: 1rem;
-            cursor: pointer;
-            padding: 0;
-        }
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
 
-        .links button:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
 
-        /* Splash Screen */
-        .splash-screen {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 1.5rem;
-            z-index: 10;
-            animation: fadeOut 2s ease-out 3s forwards;
-        }
-        #guestEntryBtn{
-        background-color: #007bff;
-        color: #ffffff;
-        border-style: none;
-        text-decoration: none;
-      font-size: medium;
-        padding: 5px;
-        width: 100px;
-        }
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+}
 
-        @keyframes fadeOut {
-            to {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
+/* For mobile screens */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
 
-        .splash-screen h1 {
-            margin-bottom: 1rem;
-        }
-    </style>
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-nav .icon-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbar-nav .nav-link i {
+    margin-right: 10px;
+  }
+
+  .nav-icons {
+    display: none !important;
+  }
+
+  #search-input {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
+  </style>
 </head>
-
 <body>
-    <div class="splash-screen">
-        <h1>Welcome to Fusion Fits</h1>
-        <p>Please log in to continue</p>
-    </div>
-
-    <div class="center-container">
-        <!-- Sign Up Form -->
-        <form id="signUpForm" class="active">
-            <h1 class="form-title">Sign Up</h1>
-            <input type="email" id="remail" class="form-control" placeholder="Email Address" required>
-            <input type="password" id="rpassword" class="form-control" placeholder="Password" required>
-            <button type="submit" id="btn1">Sign Up</button>
-            <div class="links">
-                <p>Already Have an Account?</p>
-                <button id="signInButton" type="button">Sign In</button>
-                <button id="guestEntryBtn" type="button">Guest Entry</button>
-            </div>
+  <nav id="main-container" class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="padding: 20px;">
+    <div class="container-fluid">
+      <!-- Brand Name -->
+      <a class="navbar-brand" href="#" style="font-weight: 900; font-size: x-large; color: #ff5722;">Fusion Fits</a>
+  
+      <!-- Navbar Toggle Button for Small Screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links, Searchbar, Wishlist, Cart, and Filter -->
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#mens-section">Men</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#womens-section">Women</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#kids-section">Kids</a>
+          </li>
+        </ul>
+        <form class="d-flex me-3 d-none d-lg-flex" role="search" onsubmit="handleSearch(event)">
+          <input id="search-input" class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search" style="width:290px;">
+          <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
         </form>
+        <!-- Icons for Wishlist, Cart, and Filter -->
+        <div class="d-lg-flex d-none nav-icons">
+           <!-- Cart Icon -->
+           <div class="cart-container ">
+            <button id="cart-icon" class="icon-btn" onclick="window.location.href = 'cart.html';">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
 
-        <!-- Sign In Form -->
-        <form id="signInForm">
-            <h1 class="form-title">Sign In</h1>
-            <input type="email" id="email" class="form-control" placeholder="Email Address" required>
-            <input type="password" id="password" class="form-control" placeholder="Password" required>
-            <button type="submit" id="btn2">Sign In</button>
-            <div class="links">
-                <p>Don't have an account yet?</p>
-                <button id="signUpButton" type="button">Sign Up</button>
+          <!-- Wishlist Icon -->
+          <!-- <div class="wishlist-container">
+            <button id="wishlist-icon" class="icon-btn" onclick="window.location.href = 'wishlist.html';">
+              <i class="fas fa-heart" style="color: red;"></i>
+            </button>
+          </div> -->
+          <!-- Filter Icon -->
+          <div class="filter-container">
+            <button id="filter-icon" class="icon-btn" onclick="toggleFilterOptions()">
+              <i class="fas fa-filter"></i>
+            </button>
+            <!-- Filter Options -->
+            <div id="filter-options" class="filter-options hidden">
+              <ul class="filter-list">
+                <li><a href="#women" onclick="navigateToCategory('women')">Women</a></li>
+                <li><a href="#men" onclick="navigateToCategory('men')">Men</a></li>
+                <li><a href="#kids" onclick="navigateToCategory('kids')">Kids</a></li>
+                <li><a href="#newborn" onclick="navigateToCategory('newborn')">Newborn</a></li>
+              </ul>
             </div>
-        </form>
+          </div>
+        </div>
+ <!-- Profile Icon -->
+<div class="navbar-profile" onclick="handleProfileClick()">
+  <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Profile" width="25" height="25">
+</div>
+
+ <!-- Profile Modal -->
+<div id="profileModal" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  background-color: white; border-radius: 12px; padding: 20px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); z-index: 1000; width: 90%; max-width: 400px;">
+  <h2 style="text-align: center;">👤 Profile</h2>
+  <p><strong>Name:</strong> <span id="modalName"></span></p>
+  <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+  <p><strong>Phone:</strong> <span id="modalPhone"></span></p>
+  <p><strong>DOB:</strong> <span id="modalDOB"></span></p>
+  <p><strong>Gender:</strong> <span id="modalGender"></span></p>
+  <p><strong>Joined On:</strong> <span id="modalJoined"></span></p>
+
+  <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+    <button onclick="logout()" style="flex: 1; margin-right: 10px; padding: 10px; background-color: #e91e63; color: white; border: none; border-radius: 8px;">Logout</button>
+    <button onclick="closeModal()" style="flex: 1; padding: 10px; background-color: gray; color: white; border: none; border-radius: 8px;">Close</button>
+  </div>
+</div>
+
+<!-- Background Overlay -->
+<div id="overlay" style="display:none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index: 999;" onclick="closeModal()"></div>
+
+
+
+        <!-- Icons for Small Screens -->
+        <ul class="navbar-nav d-lg-none">
+          <li class="nav-item">
+            <button id="wishlist-icon-sm" class="nav-link icon-btn" onclick="window.location.href = 'wishlist.html';">
+              <i class="fas fa-heart" style="color: red;"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button id="cart-icon-sm" class="nav-link icon-btn" onclick="window.location.href = 'cart.html';">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button id="filter-icon-sm" class="nav-link icon-btn" onclick="toggleFilterOptions()">
+              <i class="fas fa-filter"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!----------------------------------------------------SECTION-2----------------------------------------------------------->
+  <section class="el2" id="home">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="margin-top: 2em;">
+        <div class="carousel-item active">
+          <img src="./Images(interface)/shopping-women.jpg" class="d-block w-100" style="height: 100; " alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images(interface)/newborn (2).jpg" class="d-block w-100" style="height:100;" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images(interface)/kid1.jpg" class="d-block w-100" style="height:100; " alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Shop new Arrivals</h3><br>
+            <h4>Top Deals for You</h4>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
-    <script>
-        const signUpForm = document.getElementById('signUpForm');
-        const signInForm = document.getElementById('signInForm');
-        const signInButton = document.getElementById('signInButton');
-        const signUpButton = document.getElementById('signUpButton');
-        const guestEntryBtn= document.getElementById('guestEntryBtn');
+  <!------------------------------------------------SECTION-3------------------------------------------------------------------->
+  <section class="el3" id="womens-section">
+    <article class="sec3-content">
+      <h1>"Your One-Stop Style Destination"</h1>
+      <p>It's the biggest sale of the year!</p>
+      <p>Upgrade your wardrobe today.</p>
+      <p>Enjoy the best rates!</p>
+      <button id="btn1" onclick="navigateToCategory('women')">Womens</button>
+    </article>
+    <article class="sec3-img">
+      <img class="img1" src="./Images(interface)/women-style.jpg" alt="womens images">
+      <img class="img2" src="./Images(interface)/shopping-women.jpg" alt="models">
+      <img class="img3" src="./Images(interface)/womens skirts.jpg" alt="womens skirts">
+      <img class="img4" src="https://cdn.shopify.com/s/files/1/0614/0903/4456/files/compress_0923-fhdnmcrg-42-burgundy__1.jpg?v=1720725561" alt="womens traditional">
+    </article>
+  </section>
 
-        signInButton.addEventListener('click', () => {
-            signUpForm.classList.remove('active');
-            signInForm.classList.add('active');
-        });
+  <!-------------------------------------------------SECTION-4---------------------------------------------------------------------------->
+  <section class="el4" id="mens-section">
+    <article class="sec4-img">
+        <img class="img5" src="./Images(interface)/DALL·E 2024-11-19 21.12.34 - A stylish image of a man wearing comfortable loungewear_ a soft grey hoodie paired with matching jogger pants and white sneakers, standing casually ag.webp" alt="casual denim jacket with white t-shirt">
+        <img class="img6" src="./Images(interface)/front-view-handsome-man-with-shopping-bags.jpg" alt="formal business suit with tie">
+        <img class="img7" src="./Images(interface)/DALL·E 2024-11-19 21.11.10 - A stylish image of a man wearing a casual outfit_ a denim jacket over a white t-shirt paired with slim-fit black jeans, standing confidently against a.webp" alt="comfortable loungewear set">
+        <img class="img8" src="./Images(interface)/male-brown-footwear-close-up.jpg" alt="comfortable loungewear set">
+      </article>
+      <article class="sec4-content">
+        <h1>"Redefine Your Style with Every Look"</h1>
+        <p>Discover top trends for every occasion.</p>
+        <p>From smart casuals to formal sophistication.</p>
+        <p>Upgrade your wardrobe today.</p>
+        <a href="#">
+        <button id="btn2" onclick="navigateToCategory('men')">Mens</button></a>
+      </article>
+  </section>
 
-        signUpButton.addEventListener('click', () => {
-            signInForm.classList.remove('active');
-            signUpForm.classList.add('active');
-        });
+  <!------------------------------------------------SECTION-5---------------------------------- -->
+  <section class="el5" id="kids-section">
+    <h2 class="sec5-heading">"Explore For Your Kiddo's"</h2>
+    <article class="sec5-img">
+        <div class="img-container">
+            <img src="./Images(interface)/kid6.jpg" alt="Kids Clothing">
+            <p class="img-text">Trendy Kidswear</p>
+        </div>
+        <div class="img-container">
+            <img src="./Images(interface)/kid3.jpg" alt="Kids Clothing">
+            <p class="img-text">Comfortable & Stylish</p>
+        </div>
+        <div class="img-container">
+            <img src="./Images(interface)/kid4.jpg" alt="Kids Clothing">
+            <p class="img-text">Playtime Ready</p>
+        </div>
+        <div class="img-container">
+            <img src="./Images(interface)/kid5.jpg" alt="Kids Clothing">
+            <p class="img-text">Adorable Outfits</p>
+        </div>
+    </article>
+    <a href="#">
+    <button id="btn-12" onclick="navigateToCategory('kids')"><span>Explore Kids Collection</span></button></a>
+</section>
 
-        guestEntryBtn.addEventListener('click', () => {
-            alert('Guest Entry: You can now access as a guest.');
-            window.open("main.html")
-        });
-    </script>
+
+ <!----------------------------------------------Section-6----------------------------------------- -->
+ <section class="el6">
+  <!-- Background Image and Heading -->
+  <div class="heading-container">
+    <h2 class="section-heading">Explore Our Kids Section</h2>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards-container">
+    <div class="card">
+      <img src="./Images(interface)/newborn.jpg" alt="Card Image 1">
+      <div class="card-content">
+        <h3>Newborn Care</h3>
+        <p>Learn the essentials of caring for your newborn, including feeding, sleeping, and nurturing.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Images(interface)/newborn3.jpg" alt="Card Image 2">
+      <div class="card-content">
+        <h3>Child Health</h3>
+        <p>Explore tips and advice on maintaining your child's health and well-being.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Images(interface)/newborn5.jpg" alt="Card Image 3">
+      <div class="card-content">
+        <h3>Play and Learn</h3>
+        <p>Discover engaging activities that combine playtime with learning for kids of all ages.</p>
+      </div>
+    </div>
+  </div>
+  <a href="#">
+  <button id="btn-12" onclick="navigateToCategory('newborn')"><span>Newborn</span></button></a>
+</section>
+
+
+  <!----------------------------------------------SECTION-7--------------------------------- -->
+  <section class="el7">
+    <h2>Latest Trendings</h2>
+    <div class="trendings-container">
+      <!-- Card 1 -->
+      <div class="trending-card">
+        <img src="./Images(interface)/jumpsuit.jpg" alt="Stylish Jumpsuit">
+        <h3>Stylish Jumpsuits</h3>
+        <button class="shop-now">Shop Now</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="trending-card">
+        <img src="./Images(interface)/sunglasses.jpg" alt="Trendy Sunglasses" style="height: 23vh;">
+        <h3>Trendy Sunglasses</h3>
+        <button class="shop-now">Shop Now</button>
+      </div>
+      <!-- Card 3 -->
+      <div class="trending-card">
+        <img src="./Images(interface)/kiddos.jpg" alt="Kids Fashion">
+        <h3>Kids' Fashion</h3>
+        <button class="shop-now">Shop Now</button>
+      </div>
+      <!-- Card 4 -->
+      <div class="trending-card">
+        <img src="./Images(interface)/shopping-women.jpg" alt="Women's Shopping">
+        <h3>Women's Shopping</h3>
+        <button class="shop-now">Shop Now</button>
+      </div>
+    </div>
+  </section>
+  
+  
+ <!------------------------------------------------SECTION-8------------------------------------------------------------------ -->
+  <section class="el8">
+    <div class="f-1">
+      <div class="ft">Navigation</div>
+      <ul>
+        <li>Home</li>
+        <li onclick="navigateToCategory('men')">Men</li>
+        <li onclick="navigateToCategory('women')">Women</li>
+        <li onclick="navigateToCategory('kids')">Kids</li>
+        <li onclick="navigateToCategory('newborn')">New Born</li>
+      </ul>
+    </div>
+    <div class="f-2">
+      <div class="ft">Contact Us</div>
+      <ul>
+        <li>+919876543210</li>
+        <li>+919876543210</li>
+        <li>+919876543210</li>
+        <li>+919876543210</li>
+        <li>+919876543210</li>
+      </ul>
+    </div>
+    <div class="f-3">
+      <div class="ft">Our Stores</div>
+      <ul>
+        <li>Hyderabad</li>
+        <li>Chennai</li>
+        <li>Bengaluru</li>
+        <li>Vishakapatnam</li>
+        <li>Vijayawada</li>
+      </ul>
+    </div>
+    <div class="f-4">
+      <div class="ft">Follow Us</div>
+      <div class="f-icons">
+        <div><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a></div>
+        <div><a href="https://x.com/?lang=en"><i class="fa-brands fa-square-twitter" style="color: #74C0FC;"></i></a>
+        </div>
+        <div><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #d51a7e;"></i></a>
+        </div>
+        <div><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin" style="color: #74C0FC;"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div style="text-align: center; padding: 10px; background-color:white;">
+        &copy; <span id="currentYear"></span> Fusion Fits. All Rights Reserved.
+    </div>
+</footer>
+<script>
+    // Automatically update the year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+   
+  // document.getElementById('profile-icon').addEventListener('click', () => {
+  //   const user = localStorage.getItem('user');
+  //   if (user) {
+  //     window.location.href = 'profile.html';
+  //   } else {
+  //     window.location.href = 'login.html';
+  //   }
+  // });
+ 
+  function handleProfileClick() {
+    const userData = JSON.parse(localStorage.getItem("user"));
+
+    if (!userData) {
+      // Not logged in
+      window.location.href = "login.html";
+    } else {
+      // Populate modal
+      document.getElementById("modalName").textContent = userData.name || "N/A";
+      document.getElementById("modalEmail").textContent = userData.email || "N/A";
+      document.getElementById("modalPhone").textContent = userData.phone || "N/A";
+      document.getElementById("modalDOB").textContent = userData.dob || "N/A";
+      document.getElementById("modalGender").textContent = userData.gender || "N/A";
+      document.getElementById("modalJoined").textContent = userData.accountCreated || "N/A";
+
+      document.getElementById("profileModal").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+    }
+  }
+
+  function closeModal() {
+    document.getElementById("profileModal").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+  }
+
+  function logout() {
+    localStorage.removeItem("user");
+    closeModal();
+    window.location.href = "index.html"; // or homepage
+  }
+
+</script>
+<script src="./jsfiles/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

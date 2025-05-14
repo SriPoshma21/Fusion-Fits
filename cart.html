@@ -9,6 +9,119 @@
   <link rel="stylesheet" href="./styles/home.css">
   <link rel="stylesheet" href="./styles/cart.css">
   <link rel="stylesheet" href="./media/media.css">
+  <style>
+    .navbar {
+  background-color: #fff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: x-large;
+  color: #ff5722 !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #333 !important;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff5722 !important;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.nav-icons {
+  align-items: center;
+  gap: 15px;
+}
+
+.filter-options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.filter-options.hidden {
+  display: none;
+}
+
+/* === Responsive Styles === */
+
+/* For tablets and small desktops */
+@media (max-width: 991.98px) {
+  .navbar-nav-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-nav .icon-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbar-nav .nav-link i {
+    margin-right: 10px;
+  }
+
+  .nav-icons {
+    display: none !important;
+  }
+
+  #search-input {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
+
+
+  </style>
 </head>
 <body>
   <nav id="main-container" class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="padding: 20px;">
@@ -45,11 +158,11 @@
         <!-- Icons for Wishlist, Cart, and Filter -->
         <div class="d-lg-flex d-none nav-icons">
            <!-- Cart Icon -->
-           <div class="cart-container ">
+           <!-- <div class="cart-container ">
             <button id="cart-icon" class="icon-btn" onclick="window.location.href = 'cart.html';">
               <i class="fas fa-shopping-cart"></i>
             </button>
-          </div>
+          </div> -->
           <!-- Wishlist Icon -->
           <div class="wishlist-container">
             <button id="wishlist-icon" class="icon-btn" onclick="window.location.href = 'wishlist.html';">
@@ -57,10 +170,10 @@
             </button>
           </div>
           <!-- Filter Icon -->
-          <div class="filter-container">
+          <!-- <div class="filter-container">
             <button id="filter-icon" class="icon-btn" onclick="toggleFilterOptions()">
               <i class="fas fa-filter"></i>
-            </button>
+            </button> -->
             <!-- Filter Options -->
             <div id="filter-options" class="filter-options hidden">
               <ul class="filter-list">

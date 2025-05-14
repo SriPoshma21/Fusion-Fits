@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fusion Fits | Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" href="./styles/profile.css" />
+  <script type="module" src="./jsfiles/fireb.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  #signUpButton {
+    border-style: none;
+  }
+    .form-container {
+      width: 100%;
+      max-width: 400px;
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    form {
+      display: none;
+    }
+
+    form.active {
+      display: block;
+    }
+
+    .form-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-align: center;
+      color: #212121;
+      margin-bottom: 1.5rem;
+    }
+
+    input[type="email"], input[type="password"] {
+      border-radius: 8px;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      transition: border 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #e91e63;
+      outline: none;
+      box-shadow: 0 0 5px rgba(233, 30, 99, 0.3);
+    }
+
+    button {
+      background-color: #e91e63;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      padding: 0.75rem;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+      transform: scale(1.03);
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .links button {
+      background: none;
+      border: none;
+      color: #e91e63;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 0.2rem;
+    }
+
+    .links button:hover {
+      text-decoration: underline;
+    }
+
+  #guestEntryBtn {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-style: none;
+  /* border-radius: 8px; */
+  background-color: #e91e63;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-top: 0.75rem;
+  width: auto;
+  min-width: 120px;
+}
+
+#guestEntryBtn:hover {
+  background-color: #c2185b;
+  transform: scale(1.03);
+}
+
+
+    .splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(33, 33, 33, 0.85);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      z-index: 999;
+      animation: fadeOut 2s ease-out 2.5s forwards;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .splash-screen h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .splash-screen p {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="splash-screen">
+    <h1>Welcome to Fusion Fits</h1>
+    <p>Please log in to continue</p>
+  </div>
+
+  <div class="form-container">
+    <!-- Sign Up Form -->
+    <form id="signUpForm" class="active">
+      <h1 class="form-title">Register</h1>
+      <input type="email" id="remail" class="form-control" placeholder="Email Address" required />
+      <input type="password" id="rpassword" class="form-control" placeholder="Password" required />
+      <button type="submit" id="btn1">Create Account</button>
+      <div class="links">
+        <p>Already have an account?</p>
+        <button id="signInButton" type="button">Sign In</button>
+        <!-- Guest Login Button -->
+<button onclick="loginAsGuest()">Login as Guest</button>
+
+      </div>
+    </form>
+
+    <!-- Sign In Form -->
+    <form id="signInForm">
+      <h1 class="form-title">Sign In</h1>
+      <input type="email" id="email" class="form-control" placeholder="Email Address" required />
+      <input type="password" id="password" class="form-control" placeholder="Password" required />
+      <button type="submit" id="btn2">Sign In</button>
+      <div class="links">
+        <p>Don't have an account?</p>
+        <button id="signUpButton" type="button">Sign Up</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const signUpForm = document.getElementById("signUpForm");
+    const signInForm = document.getElementById("signInForm");
+    const signInButton = document.getElementById("signInButton");
+    const signUpButton = document.getElementById("signUpButton");
+    const guestEntryBtn = document.getElementById("guestEntryBtn");
+
+    signInButton.addEventListener("click", () => {
+      signUpForm.classList.remove("active");
+      signInForm.classList.add("active");
+    });
+
+    signUpButton.addEventListener("click", () => {
+      signInForm.classList.remove("active");
+      signUpForm.classList.add("active");
+    });
+
+    // guestEntryBtn.addEventListener("click", () => {
+    //   alert("Guest Entry: You can now access as a guest.");
+    //   window.location.href = "index.html";
+    // });
+    function loginAsGuest() {
+  const guestUser = {
+    name: "Guest User",
+    email: "guest@example.com",
+    phone: "Not Provided",
+    dob: "Not Provided",
+    gender: "Not Specified",
+    accountCreated: new Date().toLocaleDateString(),
+    isGuest: true
+  };
+
+  localStorage.setItem("user", JSON.stringify(guestUser));
+  alert("Logged in as Guest");
+  window.location.href = "index.html"; // redirect to home page
+}
+
+  </script>
+</body>
+</html>

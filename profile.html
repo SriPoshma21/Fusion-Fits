@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fusion Fits | Profile</title>
+  <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="https://via.placeholder.com/100" alt="User Profile Picture">
+      <h1 id="userName">User Name</h1>
+    </div>
+
+    <div class="profile-info">
+      <div class="info-box">
+        <h3>Personal Info</h3>
+        <p>Name: <span id="personalName">User</span></p>
+        <p>Gender: <span id="personalGender">Male</span></p>
+        <p>DOB: <span id="personalDOB">01/01/1990</span></p>
+      </div>
+
+      <div class="info-box">
+        <h3>Contact Info</h3>
+        <p>Phone: <span id="contactPhone">123-456-7890</span></p>
+        <p>Email: <span id="contactEmail">user@example.com</span></p>
+      </div>
+
+      <div class="info-box">
+        <h3>Account Info</h3>
+        <p>Account Created: <span id="accountCreated">04/28/2025</span></p>
+      </div>
+    </div>
+    <div class="profile-footer">
+      <button onclick="editProfile()">Edit</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <script src="./jsfiles/profile.js"></script>
+</body>
+</html>
