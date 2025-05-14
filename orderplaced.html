@@ -40,6 +40,18 @@
         <p style="font-size: 2rem; color: green;">✅ Order Placed Successfully</p>
         <p>Tracking details and confirmation have been sent to your email.</p>
         <p>😊 Thank you... Shop again! 😊</p>
+        <button onclick="goHome()" style="
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        ">
+            ⬅️ Back to Home
+        </button>
     </div>
 
     <script>
@@ -51,6 +63,11 @@
             document.getElementById('loading-container').style.display = 'none';
             document.getElementById('success-container').style.display = 'block';
         }, 3000);
+
+        // Navigate back to homepage
+        function goHome() {
+            window.location.href = 'index.html'; // Change path as needed
+        }
     </script>
 </body>
 </html>

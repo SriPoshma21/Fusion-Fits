@@ -1,7 +1,19 @@
 // Fetch cart data from localStorage
-let chkbtn=document.getElementById("chk-btn").addEventListener("click",()=>{
-window.location.href="checkoutpage.html"
-})
+document.getElementById("chk-btn").addEventListener("click", () => {
+  const errorMsg = document.getElementById("error-msg");
+
+  // 🔄 Get the latest cart data from localStorage
+  const latestCartData = JSON.parse(localStorage.getItem("shoppingdata")) || [];
+
+  if (latestCartData.length === 0) {
+    errorMsg.textContent = "🛒 Your cart is empty. Please select items before proceeding.";
+    return;
+  }
+
+  // ✅ Clear previous error and continue
+  errorMsg.textContent = "";
+  window.location.href = "checkoutpage.html";
+});
 
 let cartData = JSON.parse(localStorage.getItem("shoppingdata")) || [];
 
