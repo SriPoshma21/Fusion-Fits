@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
   <link rel="stylesheet" href="./styles/home.css">
   <link rel="stylesheet" href="./styles/products.css">
 </head>
+
 <body>
-   <nav id="main-container" class="navbar navbar-expand-lg bg-body-tertiary sticky-top " style="padding: 20px;">
+  <nav id="main-container" class="navbar navbar-expand-lg bg-body-tertiary sticky-top " style="padding: 20px;">
     <div class="container-fluid">
       <!-- Brand Name -->
       <a class="navbar-brand" href="#" style="font-weight: 900; font-size: x-large; color: #ff5722 ">Fashion Store</a>
@@ -27,15 +29,16 @@
           <li class="nav-item me-3">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item me-3">
+          <li class="nav-item me-3 d-none d-lg-block">
             <a class="nav-link" href="#" onclick="navigateToCategory('men')">Men</a>
           </li>
-          <li class="nav-item me-3">
+          <li class="nav-item me-3 d-none d-lg-block">
             <a class="nav-link" href="#" onclick="navigateToCategory('women')">Women</a>
           </li>
-          <li class="nav-item me-3">
+          <li class="nav-item me-3 d-none d-lg-block">
             <a class="nav-link" href="#" onclick="navigateToCategory('kids')">Kids</a>
           </li>
+
           <!-- Search bar, Wishlist, and Cart icons (on smaller screens inside hamburger menu) -->
           <li class="nav-item d-lg-none mt-2">
             <!-- <form class="d-flex" role="search">
@@ -53,14 +56,14 @@
         <div class="nav-icons">
           <!-- Cart Icon -->
           <div class="cart-container">
-      <button id="cart-icon" class="icon-btn" onclick="window.location.href = 'cart.html';">
+            <button id="cart-icon" class="icon-btn" onclick="window.location.href = 'cart.html';">
               <i class="fas fa-shopping-cart"></i>
               <span id="cart-badge">0</span>
             </button>
           </div>
           <!-- Wishlist Icon -->
           <div class="wishlist-container">
-            <button id="wishlist-icon" class="wishlist-icon" onclick="window.location.href = 'wishlist.html';" >
+            <button id="wishlist-icon" class="wishlist-icon" onclick="window.location.href = 'wishlist.html';">
               <i class="fas fa-heart"></i>
               <span id="wishlist-badge">0</span>
             </button>
@@ -72,11 +75,12 @@
     </div>
   </nav>
   <!-------------------------------------------------products display section--------------------------------------------------------->
-    <h1 id="categoryTitle">Products</h1>
-    <div id="productContainer"></div>
+  <h1 id="categoryTitle">Products</h1>
+  <div id="productContainer"></div>
   <script src="./jsfiles/cart.js"></script>
   <script src="./jsfiles/main.js"></script>
   <script src="./jsfiles/products.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
